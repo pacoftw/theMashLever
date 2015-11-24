@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html align="center">
+    <head>
+       
+         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="lib/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        
+        <title>The Mash Lever</title>
+    </head>
+    
+    <body>
+        <div data-role="page" id="pageOne" style="text-transform: none">
+            <div data-role="header" data-position="fixed">
+                <h1>The Mash Lever</h1>
+            </div>
+        
+            <div data-role="main" align="center">
+                <h1>Crowdsourced Citizenship</h1>
+                <img src="img/votelevers.jpg" alt="Vote Levers">
+                <a  href="#myProfile" class="ui-btn" type="button" data-inline="true">My Profile</a>
+                <a href="#letsGo" class="ui-btn" type="button" data-inline="true">Let's Go!</a>
+            </div>
+            
+            <div data-role="footer" data-position="fixed">
+                <h1 style="text-transform: none">GGC ITEC 4550</h1>
+            </div>
+        </div>
+        
+<!--Page 1: My Profile-->
+        
+        <div data-role="page" id="myProfile" style="text-transform: none">
+            <h1>My Profile</h1>
+            <form action="demo_form.asp" method="get">
+                First Name:
+                <input type="text" name="fname">
+                <br> Last Name:
+                <input type="text" name="lname">
+                <br> Email: 
+                <input type="text" name="email">
+                <br> I describe myself as: 
+                <input type="radio" name="standing" value="Liberal">Liberal
+                <br>
+                <input type="radio" name="standing" value="moderate" checked>Moderate
+                <br>
+                <input type="radio" name="standing" value="conservative">Conservative
+                <br>
+                <a  href="#pageOne" class="ui-btn" type="button" data-inline="true">Submit</a>
+            </form>
+            
+            <div data-role="footer" data-position="fixed">
+                <h1 style="text-transform: none">GGC ITEC 4550</h1>
+            </div>
+        </div>
+        
+<!--Page 2: Mash Lever-->
+        
+        <div data-role="page" id="letsGo" style="text-transform: none">
+            <h1>Crowdsourced Citizenship</h1>
+            <p>As you watch the debate, press one of the following buttons as often as you like to express your agreement or disagreement witht the speaker.</p>
+            <br>
+            
+<!-- Tried to implement the alert onCLick, but could not get it to work. Obviously couldn't figure it out. 
+     Did not know what to add for the timestamp and profile info. -->
+            
+            <button id="agree" class="ui-btn" type="button" data-inline="true" onClick="alert('this is a test')">Agree</button>
+            <button id="disagree" class="ui-btn" type="button" data-inline="true" onClick="alert('this is also a test')">Disagree</button>
+        
+            <div data-role="footer" data-position="fixed">
+                <h1 style="text-transform: none">GGC ITEC 4550</h1>
+            </div>
+        </div>
+        
+    </body>
+</html>
